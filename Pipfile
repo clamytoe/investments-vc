@@ -17,6 +17,7 @@ seaborn = "*"
 xgboost = "*"
 pandas = "*"
 numpy = "*"
+nodejs = "*"
 
 [dev-packages]
 black = "*"
