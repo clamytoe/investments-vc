@@ -26,7 +26,6 @@ If you are an Anaconda user, this command will get you up to speed with the base
 ```zsh
 conda env create
 conda activate vc
-pipenv install
 ```
 
 ### Regular Python setup
@@ -37,8 +36,7 @@ There are many ways to do this, the simplest using *venv*.
 ```zsh
 python3 -m venv venv
 source venv/bin/activate
-pip install pipenv
-pipenv install
+pip install -r requirements.txt
 ```
 
 ## Contributing
