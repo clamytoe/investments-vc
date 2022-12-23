@@ -25,7 +25,8 @@ If you are an Anaconda user, this command will get you up to speed with the base
 
 ```zsh
 conda env create
-conda activate investments-vc
+conda activate vc
+pipenv install
 ```
 
 ### Regular Python setup
@@ -36,22 +37,9 @@ There are many ways to do this, the simplest using *venv*.
 ```zsh
 python3 -m venv venv
 source venv/bin/activate
-pip install -r requirements.txt
+pip install pipenv
+pipenv install
 ```
-
-### Final setup
-
-```zsh
-pip install -e .
-```
-
-## Usage
-
-```zsh
-investments-vc
-```
-
-The output should be: `Successfully installed your project file: investments-vc`
 
 ## Contributing
 

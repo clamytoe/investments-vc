@@ -1,12 +1,6 @@
-name: investments-vc
+name: vc
 channels:
   - defaults
-  - conda-forge
 dependencies:
-  - black
-  - flake8
-  - isort
-  - mypy
-  - pytest
-  - pytest-cov
+  - pipenv
   - python=3.9.15
