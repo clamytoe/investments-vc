@@ -110,4 +110,4 @@ ENV/
 .vscode/
 
 # dataset
-data/cleaned_datda.csv
+data/cleaned_data.csv
