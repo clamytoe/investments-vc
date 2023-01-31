@@ -17,6 +17,23 @@ NOTE: This project was generated with [Cookiecutter](https://github.com/audreyr/
 
 This project is part of my first capstone project for the [Post Graduate Program in Data Science](https://www.careerera.com/data-science/post-graduate-program-in-data-science) for [CareerERA](https://www.careerera.com/).
 
+**Project structure:**
+
+```bash
+.
+├── LICENSE
+├── MartinUribe_InvestmentsVC_Capstone.html
+├── MartinUribe_InvestmentsVC_Capstone.ipynb
+├── README.md
+├── cleanup_data.py
+├── create_model.py
+├── data
+│   ├── cleaned_data.csv
+│   └── investments_VC.csv
+├── requirements.txt
+└── rf-up-86.pkl
+```
+
 ## Initial setup
 
 ```zsh
