@@ -24,7 +24,7 @@ cd investments-vc
 If you are an Anaconda user, this command will get you up to speed with the base installation.
 
 ```zsh
-conda env create
+conda create --name vc --file requirements.txt
 conda activate vc
 ```
 
@@ -39,18 +39,51 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## Contributing
+## Creating a cleaned dataset
 
-Contributions are welcomed.
-Tests can be run with with `pytest -v`, please ensure that all tests are passing and that you've checked your code with the following packages before submitting a pull request:
+The initial dataset required a lot of tweaking in order to get it ready. The cleaned dataset exceeds the maximum size requirements for GitHub, so it was not provided. Not to worry though, I have provided a script to generate it.
 
-* black
-* flake8
-* isort
-* mypy
-* pytest-cov
+Simply run the follwing command:
 
-I am not adhering to them strictly, but try to clean up what's reasonable.
+```bash
+python cleanup_data.py
+Created data/cleaned_data.csv
+```
+
+## Generating the model
+
+To generate the model, simply run the following command:
+
+```bash
+python create_model.py
+Importing dataset: data/cleaned_data.csv
+Processing data...
+Resampling imbalanced classes...
+Splitting the data into train, validation, and test sets...
+Scaling numeric features...
+One Hot Encoding categorical features...
+Creating model...
+Fitting the model...
+Testing the model...
+
+Classification Report
+              precision    recall  f1-score   support
+
+           0       0.89      0.81      0.85       988
+           1       0.83      0.90      0.87      1012
+
+    accuracy                           0.86      2000
+   macro avg       0.86      0.86      0.86      2000
+weighted avg       0.86      0.86      0.86      2000
+
+
+Confusion Matrix
+[[805 183]
+ [ 98 914]]
+
+Saving the model...
+[DONE] Model saved to rf-up-86.pkl
+```
 
 ## License
 
@@ -59,10 +92,6 @@ Distributed under the terms of the [MIT](https://opensource.org/licenses/MIT) li
 ## Issues
 
 If you encounter any problems, please [file an issue](https://github.com/clamytoe/toepack/issues) along with a detailed description.
-
-## Changelog
-
-* **v0.1.0** Initial commit.
 
 [python-version]:https://img.shields.io/badge/python-3.9.15-brightgreen.svg
 [latest-version]:https://img.shields.io/badge/version-0.1.0-blue.svg
