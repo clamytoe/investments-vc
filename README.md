@@ -11,13 +11,21 @@
 
 NOTE: This project was generated with [Cookiecutter](https://github.com/audreyr/cookiecutter) along with [@clamytoe's](https://github.com/clamytoe) [toepack](https://github.com/clamytoe/toepack) project template.
 
+![wordcloud](images/markets.png)
+
 **Author**: [Martin Uribe](clamytoe@gmail.com)
 
 ## Purpose
 
 This project is part of my first capstone project for the [Post Graduate Program in Data Science](https://www.careerera.com/data-science/post-graduate-program-in-data-science) for [CareerERA](https://www.careerera.com/).
 
-I took a dataset and cleaned it up, performed some EDA, ran some extensive parameter tuning on different classifiers, and created a model that is getting an **86%** accuracy.
+I was given a random dataset with no description of what each feature meant or what to do with it. I cleaned it up, performed some EDA, ran some extensive parameter tuning on different classifiers, and created a model that was able to generate the probability of a startup being acquired.
+
+This was a challenge because the target classes were highly imbalanced.
+
+![classes](images/imbalanced.png)
+
+> In the end, my model achieved an **86%** accuracy.
 
 Further details can be found in the [Jupyter notebook](MartinUribe_InvestmentsVC_Capstone.ipynb). I've included the [html export](MartinUribe_InvestmentsVC_Capstone.html) of the notebook so that the interactive plots would be available offline without having to recreate my environment and running the notebook.
 
