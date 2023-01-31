@@ -4,10 +4,13 @@
 # Data clean up script
 
 import calendar
+import warnings
 from pathlib import Path
 from typing import Optional
 
 import pandas as pd
+
+warnings.filterwarnings("ignore")
 
 DATA_DIR = Path("data")
 INPUT_FILENAME = DATA_DIR / "investments_VC.csv"
@@ -68,7 +71,7 @@ def main():
     )
     df["category_list"] = df.category_list.apply(lambda x: [c.strip() for c in x])
 
-    cat_dummies = pd.get_dummies(df.category_list.apply(pd.Series).stack(),).sum(
+    cat_dummies = pd.get_dummies(df.category_list.apply(pd.Series).stack()).sum(
         level=0  # type: ignore
     )
     df = pd.concat([df, cat_dummies], axis=1)
