@@ -11,6 +11,12 @@
 
 NOTE: This project was generated with [Cookiecutter](https://github.com/audreyr/cookiecutter) along with [@clamytoe's](https://github.com/clamytoe) [toepack](https://github.com/clamytoe/toepack) project template.
 
+**Author**: [Martin Uribe](clamytoe@gmail.com)
+
+## Purpose
+
+This project is part of my first capstone project for the [Post Graduate Program in Data Science](https://www.careerera.com/data-science/post-graduate-program-in-data-science) for [CareerERA](https://www.careerera.com/).
+
 ## Initial setup
 
 ```zsh
@@ -84,6 +90,22 @@ Confusion Matrix
 Saving the model...
 [DONE] Model saved to rf-up-86.pkl
 ```
+
+## TODO
+
+* [X] Cleaned up the data
+* [X] Analyzed the data
+* [X] Extracted some meaningful insights from the data
+* [X] Feature engineered 988 new features
+* [X] Successfully handled the imbalance of the target classes
+* [X] Performed some extensive model tuning to find optimal parameters
+* [X] Selected the best model
+* [X] Saved the model for deployment
+* [X] Create python script to prepare the data
+* [X] Create python script to create and save the model
+* [ ] Deploy the model with FastAPI and gunicorn or Flask and nginx
+* [ ] Containerize the model with Docker
+* [ ] Deploy the model on the cloud
 
 ## License
 
