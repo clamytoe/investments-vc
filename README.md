@@ -19,7 +19,7 @@ This project is part of my first capstone project for the [Post Graduate Program
 
 I took a dataset and cleaned it up, performed some EDA, ran some extensive parameter tuning on different classifiers, and created a model that is getting an **86%** accuracy.
 
-Further details can be found in the Jupyter notebook. I've included the html export of the notebook so that the interactive plots would be available offline, without having to recreate my environment and run the notebook.
+Further details can be found in the [Jupyter notebook](MartinUribe_InvestmentsVC_Capstone.ipynb). I've included the [html export](MartinUribe_InvestmentsVC_Capstone.html) of the notebook so that the interactive plots would be available offline without having to recreate my environment and running the notebook.
 
 **Project structure:**
 
